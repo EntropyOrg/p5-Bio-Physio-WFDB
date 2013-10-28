@@ -1,0 +1,36 @@
+=pod
+
+=head1 NAME
+
+Bio::Physio::WFDB - Bindings to the WFDB (WaveForm DataBase) library
+
+=head1 VERSION
+
+version 0.001
+
+=head1 DESCRIPTION
+
+This package is derived from the L<wfdb-swig package|http://physionet.org/physiotools/wfdb-swig.shtml> version 10.5.
+
+=head1 AUTHOR
+
+=over 4
+
+ * wfdb-swig: I. Henry and G. Moody, <wfdb-swig@physionet.org>
+ 
+ * Minor changes for CPAN packaging made by Zakariyya Mughal.
+
+=back
+
+=head1 AUTHOR
+
+Zakariyya Mughal <zmughal@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2013 by Zakariyya Mughal.
+
+This is free software, licensed under:
+
+  The GNU General Public License, Version 2, June 1991
+

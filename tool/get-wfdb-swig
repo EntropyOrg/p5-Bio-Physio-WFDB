@@ -1,0 +1,10 @@
+#!/bin/sh
+wget -c 'http://physionet.org/physiotools/wfdb-swig.tar.gz'
+tar xzf wfdb-swig.tar.gz
+if [ ! -d wfdb-swig-10.5.0 ]; then
+	echo "New version of wfdb-swig detected!"
+	exit 1;
+fi
+		
+sed -i -e "s|INC => '',|INC => '-I/tmp/include',|" wfdb-swig-10.5.0/wfdb-perl/Makefile.PL  wfdb-swig-10.5.0/wfdb-perl/gen/Makefile.PL
+sed -i -e "s|swig -I/usr/include|swig -I/tmp/include|" wfdb-swig-10.5.0/wfdb-perl/Makefile

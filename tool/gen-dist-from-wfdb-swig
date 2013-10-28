@@ -1,0 +1,6 @@
+#!/bin/sh
+mkdir -p example/wfdb-swig/
+cp -puvR wfdb-swig-10.5.0/examples/*.pl example/wfdb-swig
+sed -i -e '/package wfdb;/d' \
+	-e 's/use wfdb;/use Bio::Physio::WFDB;/' \
+	example/wfdb-swig/*.pl
